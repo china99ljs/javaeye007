@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite []" junit="false" annotations="JDK" data-provider-thread-count="10">
+  <test name="run testng(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="perf4j.study.Perf4jStepTest">
+        <methods>
+          <include name="init"/>
+          <include name="getMessageTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

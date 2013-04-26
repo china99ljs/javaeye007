@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+  default-autowire="byName">
+
+
+    <bean id="orderBo"
+          class="monkey.services.trace.study.bo.OrderBo">
+    </bean>
+    <bean id="accountBo"
+          class="monkey.services.trace.study.bo.AccountBo">
+    </bean>
+    <bean id="perfjStep"
+          class="perf4j.study.Perf4jStep">
+    </bean>
+
+</beans>

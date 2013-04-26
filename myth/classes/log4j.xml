@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE log4j:configuration SYSTEM "http://toolkit.alibaba-inc.com/dtd/log4j/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" threshold="null" debug="null">
+	<appender name="ALL" class="org.apache.log4j.FileAppender">
+		<param name="file" value="logs/myth_all.log" />
+		<param name="append" value="false" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %X{traceId} %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="SQL_LOG" class="org.apache.log4j.FileAppender">
+		<param name="file" value="logs/myth_sql.log" />
+		<param name="append" value="false" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %X{traceId} %c{2} - %m%n" />
+		</layout>
+	</appender>
+	<appender name="SPRING_LOG" class="org.apache.log4j.FileAppender">
+		<param name="file" value="logs/myth_spring.log" />
+		<param name="append" value="false" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %X{traceId} %c{2} - %m%n" />
+		</layout>
+	</appender>
+
+
+
+    <!-- This file appender is used to output aggregated performance statistics -->
+    <appender name="perf4jFileAppender" class="org.apache.log4j.FileAppender">
+        <param name="File" value="logs/perfStats.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p %c{2} - %m%n"/>
+        </layout>
+    </appender>
+
+<!-- 通过TimeSlice属性指定了统计的采样时间，默认是30秒
+	<appender name="CoalescingStatistics" class="org.perf4j.log4j.AsyncCoalescingStatisticsAppender">
+        <param name="TimeSlice" value="1000"/>
+        <appender-ref ref="perf4jFileAppender"/>
+    </appender>-->
+
+
+ 	<!-- LOGGER -->
+	<logger name="org.springframework" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="SPRING_LOG" />
+	</logger>
+	<logger name="java.sql" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="SQL_LOG" />
+	</logger>
+	<logger name="java.sql.ResultSet" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="SQL_LOG" />
+	</logger>
+	<logger name="java.sql.Connection" additivity="false">
+		<level value="INFO"/>
+		<appender-ref ref="SQL_LOG"/>
+	</logger>
+	<logger name="java.sql.PreparedStatement" additivity="false">
+		<level value="INFO"/>
+		<appender-ref ref="SQL_LOG"/>
+	</logger>
+	<!--
+	<logger name="org.perf4j.TimingLogger" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="CoalescingStatistics"/>
+    </logger> -->
+	<logger name="org.perf4j.TimingLogger" additivity="false">
+        <level value="INFO"/>
+        <appender-ref ref="perf4jFileAppender"/>
+    </logger>
+
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="ALL" />
+	</root>
+
+
+</log4j:configuration>

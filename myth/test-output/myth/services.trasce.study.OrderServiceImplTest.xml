@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="services.trasce.study.OrderServiceImplTest" failures="0" tests="1" time="1.311" errors="0">
+  <properties/>
+  <testcase name="doBizOrderTest" time="0.031" classname="services.trasce.study.OrderServiceImplTest"/>
+</testsuite>

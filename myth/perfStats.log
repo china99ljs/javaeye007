@@ -1,0 +1,6 @@
+Performance Statistics   2011-07-27 11:23:00 - 2011-07-27 11:23:10
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+String                                                 382.7         344         483        44.0          10
+StringBuffer                                             1.5           0          15         4.5          10
+StringBuilder                                            4.5           0          15         6.9          10
+

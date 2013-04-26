@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="monkey.anonation.study.TraceUtilTest" failures="0" tests="1" time="0.422" errors="0">
+  <properties/>
+  <testcase name="doBizTestReflect" time="0.0" classname="monkey.anonation.study.TraceUtilTest"/>
+</testsuite>

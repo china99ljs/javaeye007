@@ -1,0 +1,5 @@
+2012-06-11 10:09:04 INFO   support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@21e554: startup date [Mon Jun 11 10:09:04 CST 2012]; root of context hierarchy
+2012-06-11 10:09:04 INFO   xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [conf/base-config.xml]
+2012-06-11 10:09:04 INFO   xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [conf/biz-services.xml]
+2012-06-11 10:09:04 INFO   xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [conf/biz-aop.xml]
+2012-06-11 10:09:04 INFO   support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@29c204: defining beans [helloBean,orderService,cbuService,org.springframework.aop.config.internalAutoProxyCreator,monkey.aop.CbuServiceAspect#0,timingAspect,monkey.aop.CbuServiceAspect#1]; root of factory hierarchy

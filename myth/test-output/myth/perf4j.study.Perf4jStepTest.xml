@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="perf4j.study.Perf4jStepTest" failures="0" tests="1" time="12.993" errors="0">
+  <properties/>
+  <testcase name="getMessageTest" time="11.388" classname="perf4j.study.Perf4jStepTest"/>
+</testsuite>

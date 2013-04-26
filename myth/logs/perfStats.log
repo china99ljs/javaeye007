@@ -1,0 +1,7 @@
+2011-07-29 14:41:04,991 INFO  perf4j.TimingLogger - start[1311921664274] time[717] tag[simpleBlock]
+2011-07-29 14:41:05,677 INFO  perf4j.TimingLogger - start[1311921664991] time[686] tag[simpleBlock]
+2011-07-29 14:41:55,498 INFO  perf4j.TimingLogger - start[1311921714859] time[639] tag[getMessage()]
+2011-07-29 16:21:35,116 INFO  perf4j.TimingLogger - start[1311927694694] time[422] tag[simpleBlock]
+2011-07-29 16:21:35,553 INFO  perf4j.TimingLogger - start[1311927695131] time[422] tag[simpleBlock]
+2011-07-29 16:21:47,833 INFO  perf4j.TimingLogger - start[1311927707395] time[438] tag[simpleBlock]
+2011-07-29 16:21:48,255 INFO  perf4j.TimingLogger - start[1311927707833] time[422] tag[simpleBlock]

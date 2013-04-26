@@ -1,0 +1,16 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="" duration-ms="11873" started-at="2011-07-29T16:21:46Z" finished-at="2011-07-29T16:21:58Z">
+    <groups>
+    </groups>
+    <test name="run testng" duration-ms="11873" started-at="2011-07-29T16:21:46Z" finished-at="2011-07-29T16:21:58Z">
+      <class name="perf4j.study.Perf4jStepTest">
+        <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="1000" started-at="2011-07-29T16:21:46Z" finished-at="2011-07-29T16:21:47Z">
+        </test-method>
+        <test-method status="PASS" signature="getMessageTest()" name="getMessageTest" duration-ms="10873" started-at="2011-07-29T16:21:47Z" finished-at="2011-07-29T16:21:58Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
